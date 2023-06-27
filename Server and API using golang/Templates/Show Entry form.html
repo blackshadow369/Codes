@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <form class="well form-horizontal" action="/login/ShowEntry/success" method="POST"  id="contact_form">
+    <fieldset>
+    
+    <!-- Form Name -->
+   <center>
+    <h2><b>Show Entry Form</b></h2><br>
+    
+    <!--Name-->
+
+    <div class="form-group">
+      <label class="col-md-4 control-label">Id</label>  
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      <input  name="id" placeholder="Id given to you" class="form-control"  type="number">
+        </div>
+      </div>
+    </div>
+
+
+    
+    <!-- Button -->
+    <div class="form-group">
+      <label class="col-md-4 control-label"></label>
+      <div class="col-md-4"><br>
+        <button type="submit" class="btn btn-warning" ><span class="glyphicon glyphicon-send">Submit</span></button>
+      </div>
+    </div>
+    
+    </fieldset>
+    </form>
+    <br>
+    </div>
+        </div><!-- /.container -->
+    </center>
+{{if .}}
+ <a href="/login/">go back to login</a>
+    {{range .}}
+    <h2>ID: {{.D_id}}</h2>
+    <h2>Date: {{.D_date}}</h2>
+    <h2>Title: {{.D_title}}</h2>
+    <h2>Content: {{.D_content}}</h2>
+    <h2>Time of creation: {{.D_timeofcreation}}</h2>
+    
+    {{end}}
+    
+{{end}}
+</body>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <form class="well form-horizontal" action="/login/UpdateEntry/success" method="POST"  id="contact_form">
+    <fieldset>
+    
+    <!-- Form Name -->
+   <center>
+    <h2><b>Update Entry Form</b></h2><br>
+    <h2>You can only update the content right now.</h2>
+    <!--Name-->
+
+    <div class="form-group">
+      <label class="col-md-4 control-label">Id</label>  
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      <input  name="id" placeholder="Id given to you" class="form-control"  type="number">
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- Email -->
+           <div class="form-group">
+      <label class="col-md-4 control-label">Title</label>  
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+      <input name="title" placeholder="Title" class="form-control"  type="text">
+        </div>
+      </div>
+    </div>
+    
+    <!-- Date of Birth-->
+    <label>Content</label><br>
+    <textarea placeholder="Type here" name="content" rows="4" cols="50"></textarea>
+
+    
+    <!-- Button -->
+    <div class="form-group">
+      <label class="col-md-4 control-label"></label>
+      <div class="col-md-4"><br>
+        <button type="submit" class="btn btn-warning" ><span class="glyphicon glyphicon-send">Submit</span></button>
+      </div>
+    </div>
+    
+    </fieldset>
+    </form>
+    <br>
+    </div>
+        </div><!-- /.container -->
+    </center>
+</body>
